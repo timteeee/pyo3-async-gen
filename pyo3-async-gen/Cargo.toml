@@ -9,4 +9,7 @@ name = "pyo3_async_gen"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = "0.22.0"
+pyo3 = "0.21"
+pyo3-asyncio-0-21 = { version = "0.21", features = ["tokio-runtime"] }
+futures = "0.3"
+tokio = { version = "1", features = ["macros", "rt", "rt-multi-thread", "sync"] }
