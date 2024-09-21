@@ -1,10 +1,9 @@
-from pyo3_async_gen import sum_as_string
+from pyo3_async_gen import Counter
 
 
 def main():
-    result = sum_as_string(420, 69)
-
-    print(f"result: {result}")
+    for val in Counter():
+        print(f"val: {val}")
 
 
 if __name__ == "__main__":
